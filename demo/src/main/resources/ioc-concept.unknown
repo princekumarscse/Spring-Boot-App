@@ -1,0 +1,78 @@
+Q1.Important annotations and their uses
+@Component
+@Service
+@Repository
+@Autowire
+@Resource
+
+Bean scopes in spring container
+1.singleton(default)
+2.prototype
+3.request
+4.session
+5.application
+6.websocket
+
+Q2.What is difference between singleton and prototype scope?
+singleton
+only 1 instance of the bean is created 
+Spring creates the bean at container startup time and reuse it everytime
+aggressive loading
+
+prototype
+new instance of the bean is created every time when we call it
+lazy loading
+
+Q3.What is difference between @Service and @Repository anotations?
+@Repository
+used in dao(data access object) layer 
+used in classes which handles CURD operations of db
+Spring provides exception translation which means it converts SQL Exception to 
+DataAccessException 
+
+@Service
+used for classes which handle business logic
+
+@Component
+it indicates that a class is a component and should be managed by the spring ioc
+
+Q4.What is dependency injection?
+
+It is a technique where the spring container is responsible for providing the required dependencies(object or values)
+rather than the component creating or managing those dependencies itself
+For eg in Classes A,B,C(com.demo.ioc package) C is dependent on A & B to complete  its work.
+
+Q5.What is the benefit of dependency injection
+a.Reduce coupling(low coupling)
+b.Increase cohesion(high cohesion)
+c.Increase maintainability
+d.Increase readability
+e.Increase usability
+d.Increase flexibility
+e.Increase testability
+
+Q6.What is difference between @Autowired and @Resource
+(eg. in RegistrationService)
+@Autowired
+If we have more than one bean of same type then we have to specify which bean we want to call for this we 
+have to write @Qualifier aditionly  @Qualifier("twinkleRepository")
+                                 	@Autowired
+
+@Resource
+but here we can directly pass name in @Resource(name="name writen in service")
+
+Q7.How, you can inject a Bean of 3rd party library(jdk, some other jar)
+NOTE:refer AppConfig class
+
+
+
+
+
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,11 @@
+@RestController=@Controller + @ResponseBody
+
+@GetMapping
+@RequestParam
+@PathVariable
+
+@PostMapping
+@RequestBody
+
+Q1)Difference between get and post
+Q2)Difference between put and post
