@@ -19,7 +19,7 @@ public class HostelContoller {
 		repository.save(student);
 		return "Data saved sucessfully";
 
-	}
+	}   
 	@GetMapping("/myTest")
 	public Student test() {
 		Student student=new Student();

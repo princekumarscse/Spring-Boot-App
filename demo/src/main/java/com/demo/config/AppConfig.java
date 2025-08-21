@@ -19,7 +19,7 @@ public class AppConfig {
 	@Bean
 	public Rat getRatBean() {
 		return new Rat();
-	}
+	} 
 
 	@Bean(name = "myBean")
 	//@Scope("prototype")
