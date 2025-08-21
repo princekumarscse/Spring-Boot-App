@@ -35,7 +35,7 @@ public class DemoApplication {
 //		System.out.println(service.hashCode());
 //		System.out.println(service1.hashCode());
 //		C c = context.getBean(C.class);
-	//	c.m3();
+	//	c.m3(); 
 //		
 		Dog cat = context.getBean(Dog.class);
 	//	Dog cat1 = context.getBean(Dog.class);

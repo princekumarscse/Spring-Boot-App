@@ -11,7 +11,7 @@ import lombok.ToString;
 @Component
 public class Student {
 
-	private String name;
+	private String name;  
 	private String college;
 	private int rollNumber;
 	private String address;
